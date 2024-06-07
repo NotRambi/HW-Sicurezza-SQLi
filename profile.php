@@ -108,8 +108,8 @@
             if (isset($_SESSION['user'])) {
                 $utente=$_SESSION['user'];
                 // query
-                $query = "SELECT * FROM usercredential WHERE username = ($1)";
-                $result = pg_query_params($dbconn, $query, array($utente));
+                $query = "SELECT * FROM usercredential WHERE username = '$utente'";
+                $result = pg_query($dbconn, $query);
                 $row = pg_fetch_assoc($result);
                 // estrazione dei dati
                 $username = $row['username'];
@@ -117,10 +117,6 @@
                 $lastname = $row['lastname'];
                 $age = $row['age'];
                 $gender = $row['gender'];
-                // pulizia dei dati
-                $username = str_replace("''","'",$username);
-                $firstname = pg_escape_string($firstname);
-                $lastname = pg_escape_string($lastname);
                 echo "
                     <div class='page3' id='prof'>
                         <div class='user-div'>";
