@@ -1,7 +1,7 @@
 # HW-Sicurezza-SQLi
 
 ## Progetto
-progetto sugli attacchi di tipo SQL injection realizzato per il corso di Sicurezza Informatica presso l'Università La Sapienza di Roma
+Progetto sugli attacchi di tipo SQL injection realizzato per il corso di Sicurezza Informatica presso l'Università La Sapienza di Roma
 
 ## Documentazione
 index.php - pagina principale del sito, contiene il codice HTML, lo stile CSS e gli script JS. Contiene inoltre il codice PHP necessario per comunicare con il DB;
@@ -19,9 +19,9 @@ query_creazione_database.txt - query SQL da usare per creare il DB al primo util
 ## How To Use
 per eseguire questo sito è prima necessario impostare un DB con nome 'sicurezza' e poi tramite una qualsiasi versione di SQL creare e popolare le TABLE all'interno del DB usando la query nel file txt.
 
-successivamente è necessario avviare il server php del sito usando ad esempio VsCode con l'estensione Php Server.
+Successivamente è necessario avviare il server php del sito usando ad esempio VsCode con l'estensione Php Server.
 
-infine aprire il sito dalla pagina principale e seguire le istruzioni passo per passo indicate nel corpo stesso del sito per effettuare gli attacchi SQLi.
+Infine aprire il sito dalla pagina principale e seguire le istruzioni passo per passo indicate nel corpo stesso del sito per effettuare gli attacchi SQLi.
 
 ## Crediti
-realizzato da Alessio Lavore
+Realizzato da Alessio Lavore
